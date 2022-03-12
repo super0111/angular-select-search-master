@@ -1,0 +1,31 @@
+<h3>Integration with <a href="https://github.com/HaidarZ/ng-mat-select-infinite-scroll" target="_blank">ng-mat-select-infinite-scroll</a>
+</h3>
+
+<p>
+  Selected Bank: {{bankCtrl?.value}}
+</p>
+
+<!-- Disabled due to incompatibility of ng-mat-select-infinite-scroll with Angular 13. -->
+<!--
+<mat-form-field>
+  <mat-select #matSelectInfiniteScroll
+              msInfiniteScroll
+              (infiniteScroll)="getNextBatch()"
+              [formControl]="bankCtrl"
+              placeholder="Select Something">
+    <mat-option>
+      // disableScrollToActiveOnOptionsChanged should be set to true
+      <ngx-mat-select-search
+        [formControl]="searchCtrl"
+        placeholderLabel="search"
+        [disableScrollToActiveOnOptionsChanged]="true"
+        noEntriesFoundLabel="No entry matches">
+      </ngx-mat-select-search>
+    </mat-option>
+    <mat-option *ngFor="let bank of filteredBatchedData$ | async"
+                [value]="bank.id">
+      {{bank.name}}
+    </mat-option>
+  </mat-select>
+</mat-form-field>
+-->

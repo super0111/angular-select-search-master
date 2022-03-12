@@ -1,0 +1,40 @@
+<mat-toolbar color="primary">
+  Angular Material 2 App
+</mat-toolbar>
+<div class="basic-container">
+  <h1>ngx-mat-select-search</h1>
+  <p>Angular component providing an input field for searching / filtering
+    <a href="https://material.angular.io/components/select/overview" target="_blank">MatSelect</a>
+    options of the <a href="https://material.angular.io">Angular Material</a> library.</p>
+
+  <p><a href="https://github.com/bithost-gmbh/ngx-mat-select-search" target="_blank">https://github.com/bithost-gmbh/ngx-mat-select-search</a></p>
+
+  <h2>Examples</h2>
+
+  <app-single-selection-example></app-single-selection-example>
+
+  <app-multiple-selection-example></app-multiple-selection-example>
+
+  <app-custom-clear-icon-example></app-custom-clear-icon-example>
+
+  <app-option-groups-example></app-option-groups-example>
+
+  <app-server-side-search-example></app-server-side-search-example>
+
+  <app-multiple-selection-select-all-example></app-multiple-selection-select-all-example>
+
+  <app-tooltip-select-all-example></app-tooltip-select-all-example>
+
+  <div>
+    <mat-slide-toggle ngModel (ngModelChange)="toggleRightToLeft()">Right-to-left</mat-slide-toggle>
+  </div>
+
+
+
+  <div class="version-info">
+    ngx-mat-select-search Version: {{matSelectSearchVersion}} <br/>
+    Material Version: {{version.full}}
+  </div>
+
+
+</div>
